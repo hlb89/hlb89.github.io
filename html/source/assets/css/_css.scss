@@ -3,6 +3,7 @@ body {
 	font-family:$primaryFont;
 	line-height:1.4;
 	font-size:16px;
+	color:$black;
 }
 
 /*Typograpghy Classes*/
@@ -35,6 +36,16 @@ p, ul, ol {
 	widows: 2;
 }
 
+nav ul {
+	list-style: none;
+	float:right;
+	li {
+		display: inline-block;
+		a {
+			color: $black;
+		}
+	}
+}
 
 /*Form Styles*/
 /*
