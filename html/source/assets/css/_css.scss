@@ -6,6 +6,13 @@ body {
 	color:$black;
 }
 
+header, footer {
+	background: $black;
+    float: left;
+    width: 100%;
+    color:#ffffff;
+}
+
 /*Typograpghy Classes*/
 h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 	font-family:$secondaryFont;
@@ -14,6 +21,10 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 h1, .h1 {
 	font-size:40px;
 	padding:0 0 $setSpacing /2 0;
+	width:360px;
+	max-width:100%;
+	float:left;
+	color:#ffffff;
 }
 
 h2, .h2 {
@@ -39,10 +50,13 @@ p, ul, ol {
 nav ul {
 	list-style: none;
 	float:right;
+	margin-top:10px;
 	li {
 		display: inline-block;
+		padding:10px;
 		a {
-			color: $black;
+			color: #ffffff;
+			padding:10px;
 		}
 	}
 }
