@@ -72,6 +72,8 @@ $primaryFont:'Source Sans Pro', sans-serif;
 /*Colours*/
 $red:#A80D02;
 $black:#444444;
+$medGrey:#585858;
+$grey:#ebebf0;
 
 /*Universal Classes*/
 .primary-colour {color:$red;}
@@ -89,3 +91,23 @@ $black:#444444;
 //     font-weight: normal;
 //     font-style: normal;
 // }
+
+.grey {
+  background: $grey;
+  &.row:before, &.row:after {
+     background:$grey !important;
+     z-index: 1;
+  }
+}
+
+.white {
+  background:#ffffff;
+  &.row:before {
+     background:#ffffff !important;
+     z-index: 2;
+  }
+  &.row:after {
+     background:#ffffff !important;
+     z-index: 2;
+  }
+}
