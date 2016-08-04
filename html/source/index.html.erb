@@ -1,14 +1,14 @@
 <%= partial "header" %>
 <div class="container">
 	<div class="wrapper-container with-margin with-equal-height">
-		<div class="wrapper-50">
-			<div class="padded-content">
+		<div class="wrapper-50 no-margin-bottom">
+			<div class="padded-content horizontal">
 				<div class="image-wrapper">
 					<img src="assets/images/owlhelen.jpg">
 				</div>
 			</div>
 		</div>
-		<div class="wrapper-50">
+		<div class="wrapper-50 no-margin-bottom">
 			<div class="padded-content">
 				<h2 id="about">About Me</h2>
 				<p>I'm a front end web developer who loves building accessible, user friendly websites, crafting, and birds. I can be found learning about the lastest web technologies, cycling along the seafront, or singing with The Dulcetones. I was touched by a humboldt penguin at Artis, Amsterdam, and have been elated ever since.</p>
@@ -16,13 +16,13 @@
 			</div>
 		</div>
 	</div>
-	<section class="row grey wrapper-container">
-		<div class="wrapper-100">
-		<div class="padded-content">
-			<h2 id="portfolio">Portfolio</h2>
-			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
-		</div>
-	</div>
+	<section>
+		<div class="wrapper-100 row grey">
+			<div class="padded-content">
+				<h2 id="portfolio">Portfolio</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
+			</div>
+		
 	<div class="wrapper-container with-margin with-equal-height">
 		<div class="wrapper-50">
 			<div class="padded-content">
@@ -44,7 +44,7 @@
 				<p>They required a complete responsive redesign for their multilingual site. I was in charge of building the templates from Photoshop Designs, and cross browser testing. </p>
 			</div>
 		</div>
-	</div>
+	</div></div>
 	<div class="wrapper-container with-margin with-equal-height row white">
 		<div class="wrapper-50">
 			<div class="padded-content">
@@ -52,19 +52,38 @@
 					<img src="assets/images/portfoliopics/ciras.png" alt="CIRAS">
 				</a>
 				<h3>CIRAS</h3>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
-				<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+				<p>CIRAS, is a confidential incident reporting and analysis system, operating since 1996 and today delivering assurance for member organisations across the UK. CIRAS is open to all transport operators, infrastructure organisations and their supply chain.</p>
 			</div>
 		</div>
 		<div class="wrapper-50">
 			<div class="padded-content">
 				<img src="assets/images/portfoliopics/investec.png" alt="Investec: Click &amp; Invest">
 				<h3>Investec</h3>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
+				<p>Investec is a distinctive Specialist Bank and Asset Manager. Their product, Click &amp; Invest, is a new investment opportunity for UK tax residents looking to invest £10,000 or more.</p>
+			</div>
+		</div>
+	</div>	
+	<div class="wrapper-container with-margin with-equal-height row grey">
+		<div class="wrapper-50">
+			<div class="padded-content">
+				<a href="http://www.diabetes.org.uk">
+					<img src="assets/images/portfoliopics/duk.png" alt="Diabetes UK">
+				</a>
+				<h3>Diabetes UK</h3>
+				<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+			</div>
+		</div>
+		<div class="wrapper-50">
+			<div class="padded-content">
+				<a href="http://packitup.neilson.co.uk">
+					<img src="assets/images/portfoliopics/neilson.png" alt="Neilson Holidays: Pack It Up Pack It In">
+				</a>
+				<h3>Neilson</h3>
+				<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
 			</div>
 		</div>
 	</div>
-	<div class="wrapper-container with-margin with-equal-height">
+	<div class="wrapper-container with-margin with-equal-height row white">
 		<div class="wrapper-50">
 			<div class="padded-content">
 				<a href="https://www.o2digitalhealthcheck.com">
@@ -81,26 +100,6 @@
 					<img src="assets/images/portfoliopics/comte.png" alt="Comté Cheese">
 				</a>
 				<h3>Comté</h3>
-				<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
-			</div>
-		</div>
-	</div>
-	<div class="wrapper-container with-margin with-equal-height row white">
-		<div class="wrapper-50">
-			<div class="padded-content">
-				<a href="http://www.diabetes.org.uk">
-					<img src="assets/images/portfoliopics/duk.png" alt="Diabetes UK">
-				</a>
-				<h3>Diabetes UK</h3>
-				<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
-			</div>
-		</div>
-		<div class="wrapper-50">
-			<div class="padded-content">
-				<a href="http://packitup.neilson.co.uk">
-					<img src="assets/images/portfoliopics/neilson.png" alt="Neilson Holidays: Pack It Up Pack It In">
-				</a>
-				<h3>Neilson</h3>
 				<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
 			</div>
 		</div>

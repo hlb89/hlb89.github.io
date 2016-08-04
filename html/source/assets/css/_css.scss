@@ -134,7 +134,14 @@ label {
 }
 
 .row {
+	padding-top:30px;
+	padding-bottom:30px;
     position:relative;
+    float: left;
+    @include viewport(768) {
+	    padding-top: 50px;
+	    padding-bottom:50px;
+    }
 	&:before {
 	    left: 100%!important;
 	}
@@ -156,15 +163,15 @@ label {
     clear: both;
 }
 
-.image-wrapper {
-	border-radius:10px;
-	border:2px solid $grey;
-	padding:5px;
-	img {
-		border-radius:10px;
+// .image-wrapper {
+// 	border-radius:10px;
+// 	border:2px solid $grey;
+// 	padding:5px;
+// 	img {
+// 		border-radius:10px;
 		
-	}
-}
+// 	}
+// }
 
 /*Elastic Videoes / Maps*/
 .item-container {
