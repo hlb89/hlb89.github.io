@@ -1,0 +1,97 @@
+/*
+Responsive Mobile Toggle Menu v2.2
+Description: Mobile first responsive toggle menu
+Author: Danielle Vautier
+*/
+
+/*Menu mobile first CSS*/
+body{ -webkit-animation: bugfix infinite 1s; }
+
+/*This fixes a chrome/webkit bug for older Android Browsers */
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} } 
+
+/*Required functional CSS don't change this bit
+CSS styles are at the end! */
+
+.mainMenu {
+	display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    @include viewport(768) {
+    	float: right;
+    	width: auto;
+    }
+}
+	
+#toggleMenu { 
+	display: none;
+	}
+
+#toggleMenu:checked ~ ul {  
+	max-height:100%; /*Make page height*/ 
+	opacity:1;
+	}
+	
+.mainMenu > ul {
+	width:100%;
+	margin:0;
+	padding:0;
+	list-style:none;
+	float:left;
+    overflow-y: hidden;
+	max-height:0;
+	}
+
+.mainMenu li {
+	margin:0;
+	padding:0;
+	white-space:nowrap;
+	display:block;
+	width:100%;
+	float:left;
+	}
+	
+.mainMenu a, .mainMenu a:visited {
+	display:block;
+	width:100%; /*required to make whole element clickable*/
+	}
+
+label.menuTitle {
+	margin:0;
+	font-family:$secondaryFont;
+	display:block;
+	cursor:pointer;
+	background: url('../images/menu-white.png');
+    background-image: url('../images/menu-white.svg'), none; 
+	background-repeat: no-repeat;
+	background-position: 97% 10px;
+	background-size: 24px 19px; /*Make same size as your menu.png*/
+	}
+	
+@media screen and (min-width:768px) {
+	label.menuTitle {
+		display:none;
+		}
+	
+	.mainMenu ul { 
+		display:block!important;
+		border:0;
+		overflow:visible;
+		max-height:100%!important; 
+		}	
+
+	.mainMenu ul li {
+		width:auto; 
+		display:inline; 
+		border:0; 
+		}
+}
+
+	
+label.menuTitle {
+	font-size:20px;
+	width:94%;  /*Use 100% and box-sizing if not supporting ie7*/
+	padding:6px 3%;
+	font-weight:300;
+	}
