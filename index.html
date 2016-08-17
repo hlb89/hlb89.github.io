@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
-<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->        
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->        
 <head>
 	<meta charset="utf-8">
-	<title>Site Title</title>
+	<title>Helen Brockelbank - Front End Developer</title>
 	
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
 	<link rel="stylesheet" href="assets/css/styles.css?v=1.0">
-    <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
-
+    <link rel="Shortcut Icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
     <script src="assets/scripts/modernizr-2.8.3.min.js" type="text/javascript"></script>
     
 
@@ -21,7 +21,7 @@
     <![endif]-->
 
     <!--[if lte IE 9]>
-        <link rel="stylesheet" href="/assets/css/ie.css">
+        <link rel="stylesheet" href="/assets/css/ie.css?234">
     <![endif]-->
     <!-- Note: Use lt IE 9 if you want media queries to show in IE9 -->
 
@@ -40,11 +40,16 @@
             </ul> 
         </section>
         
-        <nav>
+        <nav class="mainMenu">
+            <h2 class="hide">Navigation</h2>
+            <label for="toggleMenu" class="menuTitle" onclick="">Helen Brockelbank</label>
+        <!-- onclick overwrides iOS 6 and Android 4.3  --> 
+        <input type="checkbox" id="toggleMenu" />
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="assets/Resume_1.pdf">CV</a></li>
             </ul>
         </nav>
     
@@ -52,19 +57,162 @@
 </header>
 
 <div id="main-content"><div class="container">
-	<div class="wrapper-100">
-		<div class="padded-content">
-			<h1>Hello world</h1>
-			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
-			<p><strong>Suspendisse metus</strong> nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+	<div class="wrapper-container with-margin with-equal-height text-pic">
+		<div class="wrapper-50 no-margin-bottom vert-center">
+			<div class="padded-content horizontal">
+				<div class="image-wrapper">
+					<img src="assets/images/owlhelen.jpg" alt="Helen with Owl">
+				</div>
+			</div>
+		</div>
+		<div class="wrapper-50 no-margin-bottom">
+			<div class="padded-content">
+				<h2 id="about">About Me</h2>
+				<p>I'm a front end web developer who loves building accessible, user friendly websites, crafting, and birds. I can be found learning about the lastest web technologies, cycling along the seafront, or singing with The Dulcetones. I was touched by a humboldt penguin at Artis, Amsterdam, and have been elated ever since.</p>
+				<p>I graduated from the University of Sussex with a Masters degree in Computing with Digital Media, and for the past 4 years have been developing websites in Brighton. I currently work for MBA, one of the world's leading independent agencies.</p>
+			</div>
 		</div>
 	</div>
+	<section>
+		<div class="wrapper-100 row grey">
+			<div class="padded-content">
+				<h2 id="portfolio">Portfolio</h2>
+			</div>
+		
+	<div class="wrapper-container with-margin with-equal-height">
+		<div class="wrapper-50">
+			<div class="padded-content">
+				<a href="http://www.airpartner.com/en">
+					<img src="assets/images/portfoliopics/ap.png" alt="Air Partner">
+				</a>
+				<h3>Air Partner</h3>
+				<p>Air Partner are global aviation services group, established in 1961 and headquartered at Gatwick.</p>
+				<p>They required a complete responsive redesign for their multilingual site. I was in charge of building the templates from Photoshop Designs, and cross browser testing. </p>
+			</div>
+		</div>
+		<div class="wrapper-50">
+			<div class="padded-content">
+				<a href="http://www.ecenglish.com">
+					<img src="assets/images/portfoliopics/ec.png" alt="EC English">
+				</a>
+				<h3>EC English</h3>
+				<p>EC English are an international English Language school, with centres in the USA, UK, Canada, South Africa and Malta.</p>
+				<p>They required a complete responsive redesign for their multilingual site. I was in charge of building the templates from Photoshop Designs, and cross browser testing. </p>
+			</div>
+		</div>
+	</div></div>
+	<div class="wrapper-container with-margin with-equal-height row white">
+		<div class="wrapper-50">
+			<div class="padded-content">
+				<a href="http://www.ciras.org.uk">
+					<img src="assets/images/portfoliopics/ciras.png" alt="CIRAS">
+				</a>
+				<h3>CIRAS</h3>
+				<p>CIRAS, is a confidential incident reporting and analysis system, operating since 1996 and today delivering assurance for member organisations across the UK. CIRAS is open to all transport operators, infrastructure organisations and their supply chain.</p>
+			</div>
+		</div>
+		<div class="wrapper-50">
+			<div class="padded-content">
+				<img src="assets/images/portfoliopics/investec.png" alt="Investec: Click &amp; Invest">
+				<h3>Investec</h3>
+				<p>Investec is a distinctive Specialist Bank and Asset Manager. Their product, Click &amp; Invest, is a new investment opportunity for UK tax residents looking to invest £10,000 or more.</p>
+				<p>Pictured is the pre-launch microsite. After launch this will be updated to include the full site.</p>
+			</div>
+		</div>
+	</div>	
+	<div class="wrapper-container with-margin with-equal-height row grey">
+		<div class="wrapper-50">
+			<div class="padded-content">
+				<a href="http://www.diabetes.org.uk">
+					<img src="assets/images/portfoliopics/duk.png" alt="Diabetes UK">
+				</a>
+				<h3>Diabetes UK</h3>
+				<p>Diabetes UK are the UK’s leading diabetes charity, founded by H. G. Wells in 1934. Their mission is to bring people together to work in partnership, support those living with diabetes, prevent Type 2 diabetes, make research breakthroughs, and ultimately find a cure.</p>
+				<p>The website is extremely important in providing information for people with Diabetes.</p>
+			</div>
+		</div>
+		<div class="wrapper-50">
+			<div class="padded-content">
+				<a href="http://packitup.neilson.co.uk">
+					<img src="assets/images/portfoliopics/neilson.png" alt="Neilson Holidays: Pack It Up Pack It In">
+				</a>
+				<h3>Neilson</h3>
+				<p>Neilson Holidays are a Brighton based activity holiday operator. They create award-winning beach, sailing and ski holidays and continue to perfect the art of making everyone feel welcome. No matter what your levels of experience or favourite activities are, Neilson Holidays really do let you relax as hard as you like.</p>
+				<p>Pack It Up Pack It In was part of a series of mobile and web apps designed to provide a more immersive experience when choosing a holiday.</p>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper-container with-margin with-equal-height row white">
+		<div class="wrapper-50">
+			<div class="padded-content">
+				<a href="https://www.o2digitalhealthcheck.com">
+					<img src="assets/images/portfoliopics/o2.png" alt="O2: Digital Health Check">
+				</a>
+				<h3>O2</h3>
+				<p>O2 is a telecommunications services provider in the United Kingdom owned by the Spanish multinational Telef&oacute;nica.</p>
+				<p>The O2 digital health check was designed for the B2B sector as a way to show what technology the targeted business lacks, and how O2 could fill the gap.</p>
+			</div>
+		</div>
 
-
+		<div class="wrapper-50">
+			<div class="padded-content">
+				<a href="http://www.comtecheese.co.uk/">
+					<img src="assets/images/portfoliopics/comte.png" alt="Comt&eacute; Cheese">
+				</a>
+				<h3>Comt&eacute;</h3>
+				<p>For more than ten centuries, villagers of Jura Massif, Eastern France have lovingly crafted a unique and delicious cheese: Comt&eacute;. Due to its distinctive nature, cultural value and economic importance for the region, Comt&eacute; was deservedly granted Appellation d’Origine Contr&ocirc;l&eacute;e (AOC) status in 1958.</p>
+				<p>This project was a responsive refit of the existing UK website.</p>
+			</div>
+		</div>
+	</div>
+	</section>
+	<section>
+	<div class="wrapper-container with-margin with-equal-height no-padding row grey  text-pic">
+		<div class="wrapper-50 no-margin-bottom vert-center">
+			<div class="padded-content">
+				<h2 id="contact">Contact</h2>
+				<form action="https://formspree.io/helenbrockelbank@gmail.com" method="POST">
+					<div class="form-field-wrapper">
+						<label for="name">Your Name</label>
+						<input type="text" name="name" id="name">
+					</div>
+					<div class="form-field-wrapper">
+						<label for="email">Your Email</label>
+						<input type="email" name="email" id="email">
+					</div>
+					<div class="form-field-wrapper">
+						<label for="message">Your Message</label>
+						<textarea id="message" name="message" placeholder="What do you want to talk about?"></textarea>
+					</div>
+					<div class="form-field-wrapper">
+					    <input type="submit" value="Send">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="wrapper-50 no-margin-bottom vert-center centre">
+				<img src="assets/images/tea.jpg" alt="tea time">
+		</div>
+	</div>
+</section>
 </div><!-- end container -->
 
 </div><!-- end main-content-->
 <footer>
+ 	<div class="container">
+ 		<div class="padded-content">
+ 		<div class="wrapper-container">
+ 			<div class="wrapper-50 no-margin-bottom"><p>&copy; Helen Brockelbank 2016</p></div>
+ 			<div class="wrapper-50 no-margin-bottom">
+ 				<ul class="social">
+ 					<!-- <li><a href="https://github.com/hlb89" class="github">github</a></li> -->
+ 					<!-- <li><a href="https://twitter.com/Helen_Hywater" class="twitter">twitter</a></li> -->
+ 					<!-- <li><a href="https://www.instagram.com/judithpriestx/" class="instagram">instagram</a></li> -->
+ 				</ul>
+ 			</div>
+ 		</div>
+ 		</div>
+ 	</div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
