@@ -139,6 +139,9 @@ button, input[type="submit"], .button {
 	margin-left:0;
 	transition: all 0.5s ease;
 	@include viewport(768) {
+		margin-left: 300px;
+	}
+	@include viewport(1120) {
 		margin-left: 450px;
 	}
 	&:hover {
