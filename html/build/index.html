@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
-<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->        
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->        
 <head>
 	<meta charset="utf-8">
-	<title>Site Title</title>
+	<title>Helen Brockelbank - Front End Developer</title>
 	
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
 	<link rel="stylesheet" href="assets/css/styles.css?v=1.0">
-    <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="Shortcut Icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
     <script src="assets/scripts/modernizr-2.8.3.min.js" type="text/javascript"></script>
     
@@ -21,7 +21,7 @@
     <![endif]-->
 
     <!--[if lte IE 9]>
-        <link rel="stylesheet" href="/assets/css/ie.css">
+        <link rel="stylesheet" href="/assets/css/ie.css?234">
     <![endif]-->
     <!-- Note: Use lt IE 9 if you want media queries to show in IE9 -->
 
@@ -41,6 +41,7 @@
         </section>
         
         <nav class="mainMenu">
+            <h2 class="hide">Navigation</h2>
             <label for="toggleMenu" class="menuTitle" onclick="">Helen Brockelbank</label>
         <!-- onclick overwrides iOS 6 and Android 4.3  --> 
         <input type="checkbox" id="toggleMenu" />
@@ -48,6 +49,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="assets/Resume_1.pdf">CV</a></li>
             </ul>
         </nav>
     
@@ -55,11 +57,11 @@
 </header>
 
 <div id="main-content"><div class="container">
-	<div class="wrapper-container with-margin with-equal-height">
+	<div class="wrapper-container with-margin with-equal-height text-pic">
 		<div class="wrapper-50 no-margin-bottom vert-center">
 			<div class="padded-content horizontal">
 				<div class="image-wrapper">
-					<img src="assets/images/owlhelen.jpg">
+					<img src="assets/images/owlhelen.jpg" alt="Helen with Owl">
 				</div>
 			</div>
 		</div>
@@ -75,7 +77,6 @@
 		<div class="wrapper-100 row grey">
 			<div class="padded-content">
 				<h2 id="portfolio">Portfolio</h2>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
 			</div>
 		
 	<div class="wrapper-container with-margin with-equal-height">
@@ -166,7 +167,7 @@
 	</div>
 	</section>
 	<section>
-	<div class="wrapper-container with-margin with-equal-height no-padding row grey">
+	<div class="wrapper-container with-margin with-equal-height no-padding row grey  text-pic">
 		<div class="wrapper-50 no-margin-bottom vert-center">
 			<div class="padded-content">
 				<h2 id="contact">Contact</h2>
@@ -181,7 +182,7 @@
 					</div>
 					<div class="form-field-wrapper">
 						<label for="message">Your Message</label>
-						<textarea placeholder="What do you want to talk about?"></textarea>
+						<textarea id="message" name="message" placeholder="What do you want to talk about?"></textarea>
 					</div>
 					<div class="form-field-wrapper">
 					    <input type="submit" value="Send">
@@ -189,7 +190,7 @@
 				</form>
 			</div>
 		</div>
-		<div class="wrapper-50 no-margin-bottom vert-center">
+		<div class="wrapper-50 no-margin-bottom vert-center centre">
 				<img src="assets/images/tea.jpg" alt="tea time">
 		</div>
 	</div>
@@ -204,9 +205,9 @@
  			<div class="wrapper-50 no-margin-bottom"><p>&copy; Helen Brockelbank 2016</p></div>
  			<div class="wrapper-50 no-margin-bottom">
  				<ul class="social">
- 					<li><a href="https://github.com/hlb89" class="github">github</a></li>
- 					<li><a href="https://twitter.com/Helen_Hywater" class="twitter">twitter</a></li>
- 					<li><a href="https://www.instagram.com/judithpriestx/" class="instagram">instagram</a></li>
+ 					<!-- <li><a href="https://github.com/hlb89" class="github">github</a></li> -->
+ 					<!-- <li><a href="https://twitter.com/Helen_Hywater" class="twitter">twitter</a></li> -->
+ 					<!-- <li><a href="https://www.instagram.com/judithpriestx/" class="instagram">instagram</a></li> -->
  				</ul>
  			</div>
  		</div>

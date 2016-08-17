@@ -12,15 +12,12 @@ $mediaQueries:  false;
 	width:$desktop;
 }
 
-.with-equal-height {
-	overflow:hidden;
-	margin-bottom:$setSpacing;
-}
-
-.with-equal-height > div {
-	padding-bottom:100%;
-	margin-bottom:-100%;
-}
+.ie9 {
+	.with-equal-height { > .wrapper-100, > .wrapper-33, > .wrapper-50, > .wrapper-25, > .wrapper-40, > .wrapper-60, > .wrapper-75, > .wrapper-66 {
+ 		float:left !important;
+ 	} 
+ }
+ }
 
 /*issue with PNGS not fully tested*/
 // img {

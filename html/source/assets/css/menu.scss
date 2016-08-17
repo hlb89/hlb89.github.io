@@ -55,6 +55,13 @@ CSS styles are at the end! */
 .mainMenu a, .mainMenu a:visited {
 	display:block;
 	width:100%; /*required to make whole element clickable*/
+	padding: 6px 3%;
+	background:#222222;
+	text-decoration:none;
+	transition: all 0.2s ease;
+	&:hover {
+		background:#666666;
+	}
 	}
 
 label.menuTitle {
@@ -70,6 +77,10 @@ label.menuTitle {
 	}
 	
 @media screen and (min-width:768px) {
+	.mainMenu a, .mainMenu a:visited {
+		padding:20px;
+		background:none;
+	}
 	label.menuTitle {
 		display:none;
 		}
@@ -91,7 +102,7 @@ label.menuTitle {
 	
 label.menuTitle {
 	font-size:20px;
-	width:94%;  /*Use 100% and box-sizing if not supporting ie7*/
+	width:100%; 
 	padding:6px 3%;
 	font-weight:300;
 	}
