@@ -262,9 +262,6 @@ label {
 ul.social { 
 	list-style:none;
 	float:left;
-	@include viewport(600) {
-		float:right;
-	}
 	li {
 		display:inline-block;
 		margin-right: 10px;
@@ -272,11 +269,16 @@ ul.social {
 			display: block;
 			width: 30px;
 			height: 30px;
-			background:url('../images/social.svg') no-repeat;
-			background-size:100px 30px;
+			background:url('../images/social-dark.svg') no-repeat;
+			background-size: 130px 29px;
 			text-indent: -9999px;
 			&:hover {
 				opacity: 0.8;
+			}
+			&.logo {
+				background:none;
+				text-indent: 0;
+				width: auto;
 			}
 			&.github {
 				background-position: left;
@@ -288,6 +290,17 @@ ul.social {
 			&.instagram {
 				background-position:-34px;
 			}
+
+			&.linkedin {
+				background-position:-102px;
+			}
 		}
+	}
+}
+footer ul.social {
+	list-style:none;
+	float:left;
+	@include viewport(600) {
+		float:right;
 	}
 }
