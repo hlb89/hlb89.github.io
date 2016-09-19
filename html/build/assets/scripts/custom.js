@@ -8,6 +8,12 @@
 }
 
 $(function() {
+
+$("#toggleMenu").change( function(e) {
+      e.preventDefault();
+      ($(".hamburger").hasClass("is-active") === true) ? $(".hamburger").removeClass("is-active") : $(".hamburger").addClass("is-active");
+    });
+  
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
