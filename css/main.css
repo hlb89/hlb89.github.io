@@ -579,7 +579,7 @@ CSS styles are at the end! */
 }
 
 #toggleMenu:checked ~ ul {
-  max-height: 150px;
+  max-height: 500px;
   /*Make page height*/
   transition: all .5s ease;
 }

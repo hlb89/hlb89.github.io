@@ -42,7 +42,7 @@ CSS styles are at the end! */
 }
 
 #toggleMenu:checked ~ ul {  
-	max-height:150px; /*Make page height*/ 
+	max-height:500px; /*Make page height*/ 
 	-webkit-transition: all .5s ease;
        -moz-transition: all .5s ease;
             transition: all .5s ease;
