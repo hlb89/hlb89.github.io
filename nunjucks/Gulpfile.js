@@ -90,13 +90,13 @@ gulp.task('img', function() {
 
 
 // -----------------------------------------------------------------------------
-// Fonts
+// Docs
 // -----------------------------------------------------------------------------
 
-// gulp.task('fonts', function() {
-//   return gulp.src(['./fonts/*'])
-//   .pipe(gulp.dest(siteOutput + '/fonts/'));
-// });
+gulp.task('docs', function() {
+  return gulp.src(['./docs*'])
+  .pipe(gulp.dest(siteOutput + '/docs'));
+});
 
 
 // -----------------------------------------------------------------------------
