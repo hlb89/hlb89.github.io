@@ -1024,18 +1024,51 @@ label {
   list-style: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .img-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
 .img-list li {
-  display: inline-block;
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .img-list li {
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .img-list li a {
+  margin: auto;
   display: block;
+  padding: 5%;
+  text-align: center;
 }
 
 .img-list li img {
-  width: 100%;
+  width: auto;
   max-height: 50px;
   display: block;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .img-list li img {
+    width: 100%;
+  }
+}
+
+.img-list li img.svg {
+  height: 50px;
 }
 
 /*Elastic Videoes / Maps*/
