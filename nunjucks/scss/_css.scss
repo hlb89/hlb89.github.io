@@ -239,6 +239,25 @@ label {
   -ms-flex-align: center;
   align-items: center; }}
 
+
+.img-list {
+	display: block;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	list-style: none;
+	li {
+		display: inline-block;
+		a {
+			display: block;
+		}
+		img {
+			width: 100%;
+			max-height: 50px;
+			display: block;
+		}
+	}
+ }
 // .image-wrapper {
 // 	border-radius:10px;
 // 	border:2px solid $grey;
@@ -279,7 +298,7 @@ ul.social {
 			width: 30px;
 			height: 30px;
 			background:url('../img/social-dark.svg') no-repeat;
-			background-size: 130px 29px;
+			background-size: 160px 29px;
 			text-indent: -9999px;
 			&:hover {
 				opacity: 0.8;
@@ -302,6 +321,10 @@ ul.social {
 
 			&.linkedin {
 				background-position:-102px;
+			}
+
+			&.yunojuno {
+				background-position:-132px;
 			}
 		}
 	}
